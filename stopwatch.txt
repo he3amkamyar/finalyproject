@@ -1,0 +1,14 @@
+import time
+
+    def a(b):
+        
+        while (b >= 0):
+            m, s = divmod(b, 60)
+            h, m = divmod(m, 60)
+            timer = '{:02d} : {:02d} : {:02d}'.format(h, m, s)
+            print(timer, end="\r")
+            time.sleep(1)
+            b -= 1
+            
+        print('the end')
+// coded by Dr.He3@m
